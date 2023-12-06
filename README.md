@@ -1,5 +1,9 @@
 # Tora3D
-This is official implement of Tora3D, a deep-learning method for small molecular 3D conformation generation. Please read our paper for more detials.
+Code for "Tora3D: An Autoregressive Torsion Angle Prediction Model for Molecular 3D Conformation Generation". Please read our paper [https://doi.org/10.1186/s13321-023-00754-4](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-023-00726-8) for more detials.
+
+# Abstract of article
+Three-dimensional (3D) conformations of a small molecule profoundly affect its binding to the target of interest, the resulting biological effects, and its disposition in living organisms, but it is challenging to accurately characterize the conformational ensemble experimentally. Here, we proposed an autoregressive torsion angle prediction model Tora3D for molecular 3D conformer generation. Rather than directly predicting the conformations in an end-to-end way, Tora3D predicts a set of torsion angles of rotatable bonds by an interpretable autoregressive method and reconstructs the 3D conformations from them, which keeps structural validity during reconstruction. Another advancement of our method over other conformational generation methods is the ability to use energy to guide the conformation generation. In addition, we propose a new message-passing mechanism that applies the Transformer to the graph to solve the difficulty of remote message passing. Tora3D shows superior performance to prior computational models in the trade-off between accuracy and efficiency, and ensures conformational validity, accuracy, and diversity in an interpretable way.
+![Uploading image.png…]()
 
 ## Download 
 After you clone this Repositories in your machine, you should download some files/folders(because the limit of github for big file)
@@ -25,7 +29,7 @@ After you clone this Repositories in your machine, you should download some file
         Extraction code: nKrC
   
 ## setup
-You should install pyg in your conda enveriment to run this Repositories
+You should install pyg in your conda enveriment to run this Repositories.
 
 ## preprocess
 Preprocess the GEOM dataset in the preprocess.ipynb file, where the data_path is the path to the GEOM dataset.（data source：https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JNGTDF The data file we downloaded is rdkit_folder.tar.gz.）The files generated after preprocessing are placed in ./data_1/drugs/.
