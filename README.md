@@ -7,6 +7,9 @@ Three-dimensional (3D) conformations of a small molecule profoundly affect its b
 ![1e84967c59dbc7434351549fbaa2c9d](https://github.com/myzhengSIMM/Tora3D/assets/150652802/7d959913-4d59-4099-82ec-2c0ac6ef61d7)
 
 ## Download 
+```
+git clone https://github.com/myzhengSIMM/Tora3D.git
+```
 After you clone this Repositories in your machine, you should download some files/folders(because the limit of github for big file)
   
 1, "data_1/rdkit_folder"   
@@ -29,9 +32,11 @@ After you clone this Repositories in your machine, you should download some file
         https://pan.quark.cn/s/c32e62fe57b0
         Extraction code: nKrC
   
-## Setup
-You should install pyg in your conda enveriment to run this Repositories.
-
+## Requirements
+To install all dependencies, numpy, rdkit, pytorch and pyg are required. You can install all the required packages using the following command:
+```
+conda env create -f environment.yaml
+```
 ## Preprocess
 Preprocess the GEOM dataset in the preprocess.ipynb file, where the data_path is the path to the GEOM dataset.（data source：https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JNGTDF The data file we downloaded is rdkit_folder.tar.gz.）The files generated after preprocessing are placed in ./data_1/drugs/.
 
